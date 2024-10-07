@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+main{
+background-image: url(Assets5/img/pano\ \(1\).jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.hero{
+height: 100vh;
+width: 100%;
+/*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+position: relative;
+padding: 0 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+nav{
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+padding: 20px 8%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav .logo{
+margin-left: -60px;
+}
+
+nav ul li{
+display: inline-block;
+margin-left: 40px;
+justify-content: space-around;
+position: relative;
+}
+
+nav ul li::after{
+content: '';
+height: 2px;
+width: 70%;
+left: 0;
+border-radius: 10px;
+background: #0a0a0a;
+position: absolute;
+margin: 25px 15px;
+justify-content: space-between;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 550ms ease-in-out;
+}
+    
+nav ul li:hover::after{
+transform: scaleX(1);
+transform-origin: left;
+border-radius: 20px;
+}   
+
+nav ul li a{
+color: whitesmoke;
+font-size: 15px;
+text-transform: uppercase;
+font-family:  'Delius', cursive;
+font-weight: bolder;
+}
+
+nav a:hover{
+color: black;
+}
+
+.content{
+text-align: center;
+}
+
+.content h1{
+font-size: 90px;
+color: whitesmoke;
+font-weight: 600;
+margin-top: 80px;
+transition: 0.5s;
+font-family: 'Poppins', sans-serif;
+cursor: pointer;
+}
+
+.content h1:hover{
+-webkit-text-stroke: 2px black;
+color: transparent;
+}
+
+.content a{
+text-transform:capitalize;
+display: inline-block;
+font-size: 20px;
+color: whitesmoke;
+border: 2px solid whitesmoke;
+padding: 7px 40px;
+margin-top: 50px;
+cursor: pointer;
+border-radius: 50px;
+transition: 0.5s;
+font-family:  'Poppins', sans-serif;
+font-weight: bolder;
+text-transform: uppercase;
+transition: 1s;
+}
+
+.content a:hover{
+-webkit-text-stroke: 2px black;
+color: transparent;
+-webkit-border-stroke: 2px black;
+-webkit-border-stroke: 2px whitesmoke;
+border: 2px transparent;
+transition: 1.7s;
+}
+
+.back{
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+.back{
+width: 100%;
+height: auto;
+}
+}
+
+@media (max-aspect-ratio: 16/9){
+.back{
+width: auto;
+height: 100%;
+}
+}
+
+.table-box{
+margin: 50px auto;
+}
+
+.table-row{
+display: table;
+width: 80%;
+margin: 10px auto;
+background: transparent;
+padding: 12px 0;
+color: black;
+font-size: 13px;
+box-shadow: 0px 1px 4px 0px rgba(0,0,50,0.3);
+}
+
+.table-cell{
+display: table-cell;
+width: 10%;
+text-align: center;
+padding: 4px 0;
+border-right: 1px solid #d6d4d4;
+vertical-align: middle;
+}
+
+.section{
+font-family: 'Delius', cursive;
+font-weight: bolder;
+background: whitesmoke;
+height: 580px;
+}
+
+.section input{
+width: 180px;
+text-align: center;
+font-family: 'Delius', cursive;
+padding: 5px 5px;
+border-radius: 50px;
+border: 1px solid black;
+background: whitesmoke;
+}
+
+.section p{
+text-align: center;
+font-weight: lighter;
+}
+
+#row1{
+background:rgb(182, 216, 216);
+}
+
+#pay{
+margin: 60px auto;
+text-align: center;
+}
+
+#pay img{
+width: 8%;
+height: 70px;
+padding: 10px 10px;
+cursor: pointer;
+}
+
+#tab{
+text-align: center;
+font-family: 'Trirong', serif;
+}
+
+#time1{
+border: 1px solid rgb(182, 216, 216);
+}
+#time2{
+border: 1px solid rgb(182, 216, 216);
+}
+#time3{
+border: 1px solid rgb(182, 216, 216);
+}
+#time4{
+border: 1px solid rgb(182, 216, 216);
+}
+
+#res{
+text-align: center;
+font-family:  'Bad Script', cursive;
+font-weight: bolder;
+margin-top: 50px;
+font-size: 2rem;
+}
+
